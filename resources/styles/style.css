@@ -37,15 +37,11 @@ main {
   width: 14vw
 }
 
-#bay-vue svg g {
-  fill: #c2574f !important;
-}
-
 .water {
   flex: auto;
   padding: 3vw;
   color: #ffffff;
-  background: linear-gradient(to bottom, #73abfe,#2d5b9e);
+  background: linear-gradient(to bottom, #a9ccff,#4780d4);
 }
 
 .water * {
