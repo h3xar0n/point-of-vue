@@ -1,12 +1,79 @@
-section#bay-vue {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dosis', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#bay-vue {
+  padding-top: 3vw;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  background: #f8f8f8;
 }
 
 #title h1 {
-  font-size: 6vw
+  font-size: 5vw
 }
 
 #title img {
-  width: 20vw
+  width: 14vw
+}
+
+.water {
+  flex: auto;
+  padding: 3vw;
+  color: #ffffff;
+  background: #73abfe;
+}
+
+.water * {
+  text-align: center;
+}
+
+.water h2 {
+  font-size: 5vw;
+}
+
+.water h3 {
+  font-size: 3.5vw;
+}
+
+#okta-logo {
+  width: 12vw;
+}
+
+@media screen and (max-width: 560px) {
+  #title h1 {
+    font-size: 28px;
+  }
+  #title img {
+    width: 80px;
+  }
+  .water h2 {
+    font-size: 28px;
+  }
+  .water h3 {
+    font-size: 20px;
+  }
+  #okta-logo {
+    width: 67px;
+  }
 }
