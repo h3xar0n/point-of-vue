@@ -26,7 +26,7 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   width: 100%;
-  background: #f8f8f8;
+  background: linear-gradient(to bottom, #e8f1ff,#f8f8f8);
 }
 
 #title h1 {
@@ -37,11 +37,15 @@ main {
   width: 14vw
 }
 
+#bay-vue svg g {
+  fill: #c2574f !important;
+}
+
 .water {
   flex: auto;
   padding: 3vw;
   color: #ffffff;
-  background: #73abfe;
+  background: linear-gradient(to bottom, #73abfe,#2d5b9e);
 }
 
 .water * {
