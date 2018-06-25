@@ -60,6 +60,26 @@ main {
   width: 12vw;
 }
 
+.blog-card {
+  width: 18rem;
+  margin-right:10px;
+  margin-bottom: 10px;
+}
+
+.blog-title {
+  font-size: 3vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 560px) {
   #title h1 {
     font-size: 28px;
