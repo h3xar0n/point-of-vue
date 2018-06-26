@@ -6,7 +6,7 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
-a {
+a, a:hover {
   text-decoration: none;
   color: inherit;
 }
