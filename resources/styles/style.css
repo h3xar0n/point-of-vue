@@ -1,8 +1,8 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, label {
   font-family: 'Dosis', sans-serif;
 }
 
-p {
+p, input {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -58,6 +58,47 @@ main {
 
 #okta-logo {
   width: 12vw;
+}
+
+.standard-break {
+  line-height: 6vw;
+}
+
+#mc_embed_signup {
+  margin: 0 auto;
+}
+
+#mc_embed_signup_scroll {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.email {
+  border: none;
+  height: 50px;
+  border-radius: 6px;
+  text-align: left;
+  padding-left: 15px;
+  background: linear-gradient(127deg, #d8e5f9, #c6ddff);
+}
+
+.button {
+  cursor: pointer;
+  color: #fff;
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(240deg, #1cc7d0, #2dde98);
+  transition: transform 0.1s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s;
 }
 
 .blog-card {
