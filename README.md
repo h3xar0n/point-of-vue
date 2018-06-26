@@ -7,7 +7,7 @@ Point of Vue website
 
 - Blog: https://medium.com/point-of-vue
 
-- Meetup page: `Coming soon...`
+- Meetup page: https://www.meetup.com/Point-of-Vue/
 
 ### Getting started
 
