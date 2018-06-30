@@ -1,253 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
 
-<head>
-  <title>Point of Vue</title>
-  <link rel="icon" href="./resources/images/pov.ico" type="image/x-icon" />
+    <title>Point of Vue</title>
+	<link rel="icon" href="/src/assets/pov.ico" type="image/x-icon" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-    crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	crossorigin="anonymous">
 
-  <!-- Bootstrap 4 -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous"> -->
+	<!-- Styles -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"></link>
+  	<link rel="stylesheet" href="/src/styles/main.css">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"></link>
-  <link rel="stylesheet" href="./resources/styles/style.css"></link>
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121422516-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121422516-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+	function gtag() {
+	  dataLayer.push(arguments);
+	}
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+	gtag('js', new Date());
+	gtag('config', 'UA-121422516-1');
+	</script>
+  </head>
+  <body>
+    <div id="app"></div>
 
-    gtag('js', new Date());
-    gtag('config', 'UA-121422516-1');
-  </script>
-
-  <!-- Scripts -->
-  <!-- Not Needed for Now -->
-  <script src="https://unpkg.com/vue"></script>
-</head>
-
-<body>
-  <main>
-
-    <section class="bay-vue landing">
-      <div class="title">
-        <h1>Point of</h1>
-        <img src="https://vuejs.org/images/logo.png" alt="Vue logo">
-      </div>
-      <svg viewBox="20 0 580 90" id="bridge">
-        <g transform="translate(0.000000,93.000000) scale(0.100000,-0.100000)" fill="#c2574f" stroke="none">
-          <path d="M1540 804 c-441 -267 -676 -386 -895 -451 -66 -20 -121 -40 -123 -45
-          -2 -4 -87 -8 -188 -8 -174 0 -184 -1 -184 -19 0 -11 9 -20 23 -23 12 -2 365
-          -3 785 -1 l762 4 0 -130 0 -131 38 1 c20 0 31 3 25 6 -10 3 -13 39 -13 129 l0
-          124 1296 0 1295 0 -3 -130 -3 -130 28 0 27 0 0 131 0 130 795 -3 795 -4 0 23
-          0 23 -180 0 c-99 0 -188 4 -198 10 -9 5 -60 21 -112 36 -219 62 -410 155 -820
-          399 -118 71 -231 137 -250 149 -19 11 -38 25 -42 31 -5 7 -13 6 -25 -2 -106
-          -72 -578 -348 -728 -425 -434 -223 -712 -226 -1138 -12 -152 77 -635 358 -729
-          425 -15 10 -28 19 -30 18 -2 0 -95 -57 -208 -125z m194 -51 c-22 -488 -21
-          -482 -22 -167 -1 160 1 294 5 297 19 20 23 -6 17 -130z m2628 -193 l-9 -265
-          -1 291 c-1 160 1 294 6 298 12 13 13 -46 4 -324z m66 25 c2 -193 0 -285 -8
-          -285 -6 0 -10 30 -10 78 0 42 -3 176 -6 297 -6 187 -4 218 7 207 11 -10 15
-          -72 17 -297z m-2638 5 c0 -168 -4 -290 -9 -290 -5 0 -11 110 -13 253 -3 270
-          -1 327 13 327 5 0 9 -126 9 -290z m-110 -10 c0 -180 -4 -280 -10 -280 -6 0
-          -10 98 -10 273 0 241 3 287 17 287 2 0 3 -126 3 -280z m160 -17 c0 -227 -2
-          -263 -15 -263 -13 0 -15 38 -15 283 1 250 2 280 15 263 12 -16 15 -67 15 -283z
-          m2480 17 c0 -249 -2 -280 -16 -280 -14 0 -15 29 -12 268 3 236 7 292 24 292 2
-          0 4 -126 4 -280z m160 -17 c0 -227 -2 -263 -15 -263 -13 0 -15 38 -15 283 1
-          250 2 280 15 263 12 -16 15 -67 15 -283z m-2850 2 c0 -235 -2 -265 -16 -265
-          -14 0 -15 27 -12 253 3 223 7 277 24 277 2 0 4 -119 4 -265z m258 -14 c-2
-          -185 -6 -245 -15 -249 -10 -3 -13 54 -13 265 1 239 2 266 15 248 13 -16 15
-          -60 13 -264z m2370 -242 c-19 -12 -24 456 -6 497 11 25 13 -11 16 -230 2 -201
-          -1 -261 -10 -267z m272 250 c0 -224 -2 -259 -15 -259 -13 0 -15 36 -15 265 0
-          231 2 264 15 259 13 -5 15 -44 15 -265z m-2954 -246 c-3 -7 -10 -13 -16 -13
-          -16 0 -13 441 3 477 10 24 12 -10 15 -212 1 -132 0 -245 -2 -252z m2644 237
-          c0 -216 -2 -250 -15 -250 -13 0 -15 33 -15 238 0 172 3 241 12 250 7 7 13 12
-          15 12 2 0 3 -112 3 -250z m360 -6 c0 -210 -2 -244 -15 -244 -13 0 -15 34 -15
-          250 0 218 2 249 15 244 13 -5 15 -42 15 -250z m-2640 1 c0 -211 -2 -245 -15
-          -245 -13 0 -15 32 -15 229 0 126 3 236 6 245 18 48 24 -7 24 -229z m50 -16 c0
-          -188 -2 -219 -15 -219 -13 0 -15 32 -15 231 0 205 2 230 15 219 12 -10 15 -49
-          15 -231z m-460 7 c0 -190 -2 -225 -15 -230 -13 -5 -15 24 -15 218 0 122 3 226
-          7 229 19 20 23 -12 23 -217z m2640 -1 c0 -193 -2 -225 -15 -225 -13 0 -15 32
-          -15 225 0 193 2 225 15 225 13 0 15 -32 15 -225z m465 193 c3 -18 5 -122 3
-          -230 -3 -172 -5 -196 -18 -188 -12 8 -16 43 -18 196 -4 188 1 254 18 254 5 0
-          12 -15 15 -32z m-3165 -213 c0 -195 -7 -254 -24 -192 -8 29 -8 321 0 370 15
-          89 24 22 24 -178z m578 -3 c2 -184 0 -212 -13 -212 -13 0 -15 29 -15 216 0
-          168 3 215 13 212 9 -4 13 -58 15 -216z m2066 196 c3 -13 6 -110 6 -215 0 -165
-          -2 -193 -15 -193 -13 0 -15 31 -15 215 0 195 7 254 24 193z m570 -9 c3 -17 6
-          -114 6 -215 0 -157 -2 -184 -15 -184 -13 0 -15 31 -15 215 0 198 8 262 24 184z
-          m-3264 -200 c0 -156 -3 -200 -12 -197 -10 4 -14 50 -16 179 -3 177 1 219 18
-          219 6 0 10 -76 10 -201z m674 185 c3 -9 6 -99 6 -200 0 -157 -2 -184 -15 -184
-          -13 0 -15 29 -15 200 0 181 6 230 24 184z m1966 -184 c0 -178 -2 -200 -16
-          -200 -15 0 -16 20 -12 188 3 166 8 212 24 212 2 0 4 -90 4 -200z m674 184 c3
-          -9 6 -99 6 -201 0 -143 -3 -184 -12 -181 -10 4 -14 55 -16 201 -2 180 4 229
-          22 181z m-3364 -199 c0 -158 -2 -185 -15 -185 -13 0 -15 25 -15 166 0 145 7
-          204 25 204 3 0 5 -83 5 -185z m778 -3 c2 -158 0 -182 -13 -182 -13 0 -15 26
-          -15 186 0 144 3 185 13 182 9 -4 13 -52 15 -186z m1862 3 c0 -158 -2 -185 -15
-          -185 -13 0 -15 22 -15 139 0 149 8 231 21 231 5 0 9 -83 9 -185z m778 -3 c2
-          -158 0 -182 -13 -182 -13 0 -15 26 -15 186 0 144 3 185 13 182 9 -4 13 -52 15
-          -186z m-3469 -29 c1 -130 -1 -153 -14 -153 -13 0 -15 25 -15 163 0 90 3 167 7
-          171 16 15 22 -35 22 -181z m889 7 c4 -142 3 -160 -12 -160 -14 0 -16 20 -16
-          172 0 135 3 169 12 160 8 -8 14 -65 16 -172z m1751 -27 c1 -112 -1 -133 -14
-          -133 -13 0 -15 24 -15 154 0 163 9 223 22 151 4 -22 7 -100 7 -172z m889 27
-          c3 -141 2 -160 -12 -160 -14 0 -16 22 -16 172 0 138 3 170 13 160 8 -9 13 -62
-          15 -172z m-3579 -47 c1 -94 -2 -113 -14 -113 -13 0 -15 23 -15 148 0 82 3 152
-          8 156 11 12 20 -69 21 -191z m989 32 c4 -128 2 -145 -12 -145 -14 0 -16 19
-          -16 157 0 125 3 154 12 145 9 -9 14 -60 16 -157z m1652 4 c0 -126 -2 -149 -15
-          -149 -13 0 -15 23 -15 148 0 82 3 152 6 155 19 18 24 -18 24 -154z m990 -5 c0
-          -121 -2 -144 -15 -144 -13 0 -15 24 -15 156 0 138 2 155 15 144 12 -10 15 -41
-          15 -156z m-3690 1 c0 -113 -2 -135 -15 -135 -12 0 -15 20 -15 116 0 100 9 154
-          25 154 3 0 5 -61 5 -135z m1100 -16 c0 -108 -2 -129 -15 -129 -13 0 -15 22
-          -15 141 0 125 2 140 15 129 12 -10 15 -39 15 -141z m1540 11 c0 -118 -2 -140
-          -15 -140 -13 0 -15 22 -15 134 0 127 2 137 28 145 1 1 2 -62 2 -139z m1094
-          124 c3 -9 6 -72 6 -141 0 -95 -3 -124 -12 -121 -10 3 -14 43 -16 141 -2 125 5
-          165 22 121z m-3784 -145 c0 -99 -3 -119 -15 -119 -12 0 -15 20 -15 118 0 65 3
-          122 6 125 18 18 24 -15 24 -124z m1198 3 c2 -104 0 -122 -13 -122 -13 0 -15
-          20 -15 126 0 96 3 125 13 122 8 -3 13 -40 15 -126z m1442 3 c0 -104 -2 -125
-          -15 -125 -12 0 -15 20 -15 119 0 112 2 122 28 130 1 1 2 -55 2 -124z m1194
-          109 c3 -9 6 -65 6 -125 0 -90 -3 -109 -15 -109 -13 0 -15 21 -15 125 0 114 8
-          151 24 109z m-2574 -129 c0 -98 -1 -105 -20 -105 -19 0 -20 7 -20 115 0 113 1
-          115 20 105 18 -10 20 -21 20 -115z m-1312 8 c-2 -74 -7 -108 -15 -111 -10 -3
-          -13 22 -13 101 0 57 3 107 7 110 19 19 23 -3 21 -100z m2642 -3 c0 -106 -1
-          -110 -21 -110 -21 0 -22 3 -17 98 3 54 8 104 12 110 19 31 26 4 26 -98z m1308
-          -3 c2 -91 0 -107 -13 -107 -13 0 -15 18 -15 111 0 84 3 110 13 107 8 -3 13
-          -37 15 -111z m-4008 -12 c0 -81 -2 -95 -16 -95 -14 0 -16 11 -12 83 4 75 11
-          107 24 107 2 0 4 -43 4 -95z m1415 72 c10 -40 1 -160 -12 -165 -10 -3 -13 20
-          -13 92 0 91 12 126 25 73z m1225 -72 c0 -78 -3 -95 -15 -95 -12 0 -15 17 -15
-          89 0 83 3 92 28 100 1 1 2 -42 2 -94z m1418 -3 c2 -77 0 -92 -13 -92 -12 0
-          -15 16 -15 96 0 72 3 95 13 92 8 -3 13 -34 15 -96z m-2588 -13 c0 -64 -3 -79
-          -15 -79 -12 0 -15 16 -15 85 0 71 2 83 15 79 12 -5 15 -24 15 -85z m2645 -7
-          c0 -55 -3 -67 -17 -70 -16 -3 -18 6 -18 84 0 84 1 87 18 71 13 -13 17 -34 17
-          -85z m-4167 -4 c-2 -38 -8 -63 -15 -66 -10 -3 -13 16 -13 71 0 40 3 77 7 81
-          14 14 24 -26 21 -86z m2642 17 c0 -60 -3 -75 -15 -75 -12 0 -15 13 -15 59 0
-          63 6 91 21 91 5 0 9 -34 9 -75z m-2700 -15 c0 -56 -3 -70 -15 -70 -12 0 -15
-          13 -15 58 0 48 11 82 27 82 2 0 3 -31 3 -70z m1640 -11 c0 -46 -3 -59 -15 -59
-          -12 0 -15 15 -15 71 0 62 2 70 15 59 10 -8 15 -31 15 -71z m2640 5 c0 -50 -3
-          -64 -15 -64 -12 0 -15 14 -15 70 0 58 3 68 15 64 11 -5 15 -22 15 -70z m-1640
-          1 c0 -51 -3 -65 -15 -65 -12 0 -15 13 -15 58 0 32 3 62 7 65 17 17 23 2 23
-          -58z m1690 -16 c0 -37 -4 -49 -15 -49 -12 0 -15 13 -15 61 0 54 2 60 15 49 10
-          -8 15 -30 15 -61z m-4380 11 c0 -38 -4 -50 -15 -50 -11 0 -15 11 -15 43 0 24
-          3 47 7 50 16 17 23 3 23 -43z m1738 -8 c2 -42 0 -52 -12 -52 -13 0 -16 12 -16
-          56 0 73 24 70 28 -4z m902 3 c0 -42 -3 -55 -15 -55 -11 0 -15 12 -15 48 0 27
-          3 52 7 55 16 17 23 3 23 -48z m-2692 -7 c-4 -55 -28 -64 -28 -10 0 21 3 42 7
-          45 16 17 24 4 21 -35z m1846 26 c3 -9 6 -29 6 -45 0 -22 -5 -29 -20 -29 -17 0
-          -20 7 -20 45 0 32 4 45 14 45 8 0 17 -7 20 -16z m795 -46 c1 -19 -4 -28 -14
-          -28 -11 0 -15 11 -15 38 0 21 3 42 7 46 9 9 21 -21 22 -56z m1845 46 c12 -31
-          7 -74 -9 -74 -11 0 -15 12 -15 45 0 45 12 60 24 29z m-4544 -39 c0 -19 -4 -35
-          -10 -35 -11 0 -14 53 -3 63 11 12 13 8 13 -28z m1956 11 c6 -26 -1 -46 -17
-          -46 -5 0 -9 16 -9 35 0 40 17 47 26 11z m684 -11 c0 -19 -4 -35 -10 -35 -11 0
-          -14 53 -3 63 11 12 13 8 13 -28z m1954 19 c11 -28 6 -54 -9 -54 -10 0 -15 11
-          -15 35 0 36 13 47 24 19z m-4644 -29 c0 -14 -4 -25 -10 -25 -5 0 -10 11 -10
-          25 0 14 5 25 10 25 6 0 10 -11 10 -25z m2050 0 c0 -14 -4 -25 -10 -25 -5 0
-          -10 11 -10 25 0 14 5 25 10 25 6 0 10 -11 10 -25z m590 5 c0 -11 -4 -20 -10
-          -20 -5 0 -10 9 -10 20 0 11 5 20 10 20 6 0 10 -9 10 -20z m2050 11 c0 -5 3
-          -16 6 -25 4 -11 1 -16 -10 -16 -10 0 -16 9 -16 25 0 14 5 25 10 25 6 0 10 -4
-          10 -9z m-4730 -27 c0 -8 -7 -14 -15 -14 -15 0 -21 21 -9 33 10 9 24 -2 24 -19z
-          m2140 6 c0 -11 -4 -20 -10 -20 -5 0 -10 9 -10 20 0 11 5 20 10 20 6 0 10 -9
-          10 -20z m486 -17 c-11 -11 -19 6 -11 24 8 17 8 17 12 0 3 -10 2 -21 -1 -24z
-          m2154 15 c0 -16 -3 -19 -11 -11 -6 6 -8 16 -5 22 11 17 16 13 16 -11z m-4830
-          -4 c0 -8 -5 -12 -10 -9 -6 4 -8 11 -5 16 9 14 15 11 15 -7z m2240 -5 c0 -5 -7
-          -9 -15 -9 -8 0 -15 7 -15 15 0 9 6 12 15 9 8 -4 15 -10 15 -15z m350 1 c0 -5
-          -8 -10 -17 -10 -15 0 -16 2 -3 10 19 12 20 12 20 0z m45 0 c3 -5 -1 -10 -9
-          -10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z m2250 0 c3 -5 -1 -10
-          -9 -10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z m-2598 -6 c-3 -3
-          -12 -4 -19 -1 -8 3 -5 6 6 6 11 1 17 -2 13 -5z m-2527 -24 c0 -5 -2 -10 -4
-          -10 -3 0 -8 5 -11 10 -3 6 -1 10 4 10 6 0 11 -4 11 -10z m170 0 c0 -5 -2 -10
-          -4 -10 -3 0 -8 5 -11 10 -3 6 -1 10 4 10 6 0 11 -4 11 -10z m100 6 c0 -3 -4
-          -8 -10 -11 -5 -3 -10 -1 -10 4 0 6 5 11 10 11 6 0 10 -2 10 -4z m327 -2 c-3
-          -3 -12 -4 -19 -1 -8 3 -5 6 6 6 11 1 17 -2 13 -5z m1843 -4 c0 -5 -4 -10 -10
-          -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4 10 -10z m980 6 c0 -3 -4 -8
-          -10 -11 -5 -3 -10 -1 -10 4 0 6 5 11 10 11 6 0 10 -2 10 -4z" />
-        </g>
-      </svg>
-    </section>
-
-    <section class="water news">
-      <div>
-        <h2>Join us at
-          <a href="https://goo.gl/maps/5CzGkbvc3Bs" target="_blank">
-            <img id="okta-logo" src="./resources/images/Okta_Logo_White_Medium.png" alt="">
-          </a>
-        </h2>
-        <br>
-        <a target="_blank" href="https://www.meetup.com/Point-of-Vue/">
-          <h3>
-            6PM-9PM August 1, 2018
-          </h3>
-        </a>
-      </div>
-      <br class="standard-break">
-      <div class="container">
-        <div class='row'>
-          <!-- Begin MailChimp Signup Form -->
-          <div id="mc_embed_signup">
-            <form action="https://herokuapp.us14.list-manage.com/subscribe/post?u=42dd73a709fbadb4a29ef1d0d&amp;id=f4c208334d" method="post"
-              id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-                <label for="mce-EMAIL" class="signup-prompt">
-                  Sign up for our weekly Vue newsletter
-                </label>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                  <input type="text" name="b_42dd73a709fbadb4a29ef1d0d_f4c208334d" tabindex="-1" value="">
-                </div>
-                <div class="clear">
-                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                </div>
-              </div>
-            </form>
-          </div>
-
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-          <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.1/formEmbed.js?1529584653"></script>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="sea-floor blog">
-      <h2>Read our blog</h2>
-      <br class="standard-break">
-      <div class="flex-row" id="blog-articles">
-        <article class="blog-card" 
-                 v-for="article in articles">
-          <header>
-            <div class="blog-image-wrapper">
-              <img class="blog-image" v-bind:src="article.image">
-            </div>
-            <div>
-              <h3 class="card-title">{{ article.title }}</h3>
-              <p class="card-text">{{ article.desc }}</p>
-            </div>
-          </header>
-          <footer>
-            <a v-bind:href="article.link" target="_blank">
-              <div class="button">
-                <i class="fab fa-medium"></i>
-                &nbsp;
-                Read now
-              </div>
-            </a>
-          </footer>
-        </article>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Scripts -->
-  <script src="./resources/scripts/script.js"></script>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="/dist/build.js"></script>
+  </body>
 </html>

@@ -1,0 +1,78 @@
+a, p, input {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, label {
+  font-family: 'Dosis', sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+
+
+
+.clear {
+  margin: 0 auto;
+}
+
+.button {
+  cursor: pointer;
+  color: #fff;
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(240deg, #1cc7d0, #2dde98);
+  transition: transform 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.button:hover {
+  transform: scale(1.03);
+  transition: transform 0.1s;
+}
+
+
+
+.flex-row {
+  display: flex;
+}
+
+
+@media screen and (max-width: 900px) {
+  .flex-row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .title h1 {
+    font-size: 28px;
+  }
+  .title img {
+    width: 80px;
+  }
+  .water h2 {
+    font-size: 28px;
+  }
+  .water h3 {
+    font-size: 20px;
+  }
+  #okta-logo {
+    width: 67px;
+  }
+}

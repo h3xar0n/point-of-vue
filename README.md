@@ -9,6 +9,17 @@ Point of Vue website
 
 - Meetup page: https://www.meetup.com/Point-of-Vue/
 
-### Getting started
+## Build Setup
 
-Clone this repo with Git. Start a local server on your machine using something like [http-server](https://github.com/indexzero/http-server).
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+```
+
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
