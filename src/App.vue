@@ -2,7 +2,7 @@
   <main>
     <Header></Header>
     <Water></Water>
-    <Blog></Blog>
+    <Map></Map>
   </main>
 </template>
 
@@ -16,5 +16,6 @@ export default {
 </script>
 
 <style lang="scss">
-
+  @import url('https://fonts.googleapis.com/css?family=Dosis');
+  @import './styles/main.css';
 </style>
