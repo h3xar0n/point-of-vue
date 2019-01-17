@@ -3,7 +3,7 @@ Point of Vue website
 
 > This is the website for Point of Vue user group.
 
-- Site: http://www.pointofvue.org/
+- Site: https://www.pointofvue.org/
 
 - Blog: https://medium.com/point-of-vue
 
