@@ -1,12 +1,17 @@
 <template>
-	<section class="bay-vue landing">
-      <div class="title">
-        <h1>Point of</h1>
-        <img src="https://vuejs.org/images/logo.png" alt="Vue logo">
-      </div>
-      <svg viewBox="20 0 580 90" id="bridge">
-        <g transform="translate(0.000000,93.000000) scale(0.100000,-0.100000)" fill="#c2574f" stroke="none">
-          <path d="M1540 804 c-441 -267 -676 -386 -895 -451 -66 -20 -121 -40 -123 -45
+  <section class="bay-vue landing">
+    <div class="title">
+      <h1>Point of</h1>
+      <img src="https://vuejs.org/images/logo.png" alt="Vue logo">
+    </div>
+    <svg viewBox="20 0 580 90" id="bridge">
+      <g
+        transform="translate(0.000000,93.000000) scale(0.100000,-0.100000)"
+        fill="#c2574f"
+        stroke="none"
+      >
+        <path
+          d="M1540 804 c-441 -267 -676 -386 -895 -451 -66 -20 -121 -40 -123 -45
           -2 -4 -87 -8 -188 -8 -174 0 -184 -1 -184 -19 0 -11 9 -20 23 -23 12 -2 365
           -3 785 -1 l762 4 0 -130 0 -131 38 1 c20 0 31 3 25 6 -10 3 -13 39 -13 129 l0
           124 1296 0 1295 0 -3 -130 -3 -130 28 0 27 0 0 131 0 130 795 -3 795 -4 0 23
@@ -125,34 +130,30 @@
           -8 -10 -11 -5 -3 -10 -1 -10 4 0 6 5 11 10 11 6 0 10 -2 10 -4z m327 -2 c-3
           -3 -12 -4 -19 -1 -8 3 -5 6 6 6 11 1 17 -2 13 -5z m1843 -4 c0 -5 -4 -10 -10
           -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4 10 -10z m980 6 c0 -3 -4 -8
-          -10 -11 -5 -3 -10 -1 -10 4 0 6 5 11 10 11 6 0 10 -2 10 -4z" />
-        </g>
-      </svg>
-    </section>
-
+          -10 -11 -5 -3 -10 -1 -10 4 0 6 5 11 10 11 6 0 10 -2 10 -4z"
+        ></path>
+      </g>
+    </svg>
+  </section>
 </template>
-<script>
-	export default {
 
-	}
-</script>
 <style lang='scss'>
-	.bay-vue {
-	  padding-top: 3vw;
-	  flex: auto;
-	  display: flex;
-	  align-items: center;
-	  flex-direction: column;
-	  justify-content: flex-end;
-	  width: 100%;
-	  background: linear-gradient(to bottom, #e8f1ff,#f8f8f8);
-	}
+.bay-vue {
+  padding-top: 3vw;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  background: linear-gradient(to bottom, #e8f1ff, #f8f8f8);
+}
 
-	.title h1 {
-	  font-size: 5vw
-	}
+.title h1 {
+  font-size: 5vw;
+}
 
-	.title img {
-	  width: 14vw
-	}
+.title img {
+  width: 14vw;
+}
 </style>
