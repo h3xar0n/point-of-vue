@@ -4,7 +4,8 @@
       <br class="standard-break">
       <div class="flex-row" id="blog-articles">
         <article class="blog-card" 
-                 v-for="article in articles">
+                 v-for="(article, index) in articles"
+                 :key="index">
           <header>
             <div class="blog-image-wrapper">
               <img class="blog-image" v-bind:src="article.image">
