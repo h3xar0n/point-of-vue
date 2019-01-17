@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Header from './components/Header'
-import MailchimpForm from './components/MailchimpForm'
 import Water from './components/Water'
-import Blog from './components/Blog'
+import Map from './components/Map'
+
+Vue.config.productionTip = false
 
 Vue.component('Header', Header)
-Vue.component('MailchimpForm', MailchimpForm)
 Vue.component('Water', Water)
-Vue.component('Blog', Blog)
+Vue.component('Map', Map)
 
 new Vue({
   el: '#app',
